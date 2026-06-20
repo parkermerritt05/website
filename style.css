@@ -1,0 +1,12 @@
+body{
+    background-color:rgb(215, 169, 169);
+}
+#pr{ /* This is for ids */
+    background-color: rgb(225, 136, 136);
+    color: rgb(216, 45, 45)
+}
+.rwc{ /* This is for classes */
+    background-color: rgb(225, 136, 136);
+    color: rgb(216, 45, 45)
+}
+
