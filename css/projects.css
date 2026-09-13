@@ -49,6 +49,63 @@
   font-weight: 500;
 }
 
+.project-actions {
+  margin-top: 0.5rem;
+  padding-left: var(--space-md);
+}
+
+.project-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.project-play-icon {
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.project-play:hover,
+.project-play:focus-visible {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px var(--color-accent-soft);
+}
+
+.project-play:hover .project-play-icon,
+.project-play:focus-visible .project-play-icon {
+  transform: rotate(12deg) scale(1.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-play,
+  .project-play-icon {
+    transition: none;
+  }
+
+  .project-play:hover,
+  .project-play:focus-visible {
+    transform: none;
+  }
+
+  .project-play:hover .project-play-icon,
+  .project-play:focus-visible .project-play-icon {
+    transform: none;
+  }
+}
+
 .project-note {
   margin-top: var(--space-lg);
   padding-top: var(--space-md);
