@@ -1,0 +1,22 @@
+:root {
+  --color-bg: #f5f8fc;
+  --color-bg-elevated: #ffffff;
+  --color-bg-nav: rgba(245, 248, 252, 0.92);
+  --color-text: #1a2330;
+  --color-text-muted: #3d4d5c;
+  --color-accent: #1f8f9c;
+  --color-accent-soft: rgba(31, 143, 156, 0.12);
+  --color-on-accent: #ffffff;
+  --color-border: rgba(26, 35, 48, 0.1);
+  --font-display: "Outfit", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --max-width: 68rem;
+  --nav-height: 4.25rem;
+  --radius: 0.35rem;
+  --transition-fast: 180ms ease;
+}

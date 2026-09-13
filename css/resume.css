@@ -1,0 +1,129 @@
+.resume-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  max-width: 46rem;
+  margin-bottom: var(--space-md);
+}
+
+.resume-heading .page-title {
+  margin-bottom: 0;
+}
+
+.resume-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.resume-contact {
+  color: var(--color-text);
+  font-size: 0.98rem;
+}
+
+.resume-contact a {
+  color: var(--color-text);
+}
+
+.resume-contact a:hover,
+.resume-contact a:focus-visible {
+  color: var(--color-accent);
+}
+
+.resume-download {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.65rem 1.2rem;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  font-weight: 600;
+}
+
+.resume-download:hover,
+.resume-download:focus-visible {
+  background: transparent;
+  color: var(--color-accent);
+}
+
+.resume-document {
+  max-width: 46rem;
+}
+
+.resume-section {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.resume-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resume-section-title {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
+}
+
+.resume-entry + .resume-entry {
+  margin-top: var(--space-md);
+}
+
+.resume-entry-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.resume-entry-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.resume-entry-meta {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 0.55rem;
+}
+
+.resume-points {
+  padding-left: 1.15rem;
+  color: var(--color-text);
+}
+
+.resume-points li + li {
+  margin-top: 0.35rem;
+}
+
+.resume-inline-list {
+  color: var(--color-text);
+  line-height: 1.75;
+}
+
+@media (max-width: 560px) {
+  .resume-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-heading .resume-download {
+    align-self: flex-start;
+  }
+}

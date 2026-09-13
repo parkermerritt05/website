@@ -1,0 +1,19 @@
+@media (max-width: 700px) {
+  .page-shell {
+    padding-block: var(--space-lg);
+  }
+
+  .hero {
+    padding-block: var(--space-lg);
+  }
+
+  .hero-actions .button {
+    min-width: 12rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .page-shell {
+    padding-block: 5rem;
+  }
+}

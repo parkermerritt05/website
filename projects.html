@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects · Parker Merritt</title>
+  <meta name="description" content="Projects by Parker Merritt — Route Lab, sports analytics competitions, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <a class="nav-brand" href="index.html">Parker Merritt</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        data-nav-toggle
+        aria-expanded="false"
+        aria-controls="primary-nav-links"
+        aria-label="Open menu"
+      >☰</button>
+      <ul class="nav-links" id="primary-nav-links" data-nav-links>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="experience.html">Experience</a></li>
+        <li><a class="nav-link" href="projects.html" aria-current="page">Projects</a></li>
+        <li><a class="nav-link" href="skills.html">Skills</a></li>
+        <li><a class="nav-link" href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-main">
+    <div class="page-shell">
+      <h1 class="page-title reveal">Projects</h1>
+      <p class="page-lead reveal">Open-source work on GitHub, plus CMU sports analytics and racing tooling.</p>
+
+      <ul class="project-list">
+        <li class="reveal">
+          <a class="project-link" href="https://github.com/parkermerritt05/route_lab" target="_blank" rel="noopener noreferrer">
+            <h2 class="project-title">Route Lab</h2>
+            <p class="project-summary">Interactive football passing-play simulator—customize formations and plays, then test them against a live defense.</p>
+            <p class="project-stack">Python · CMU Graphics</p>
+          </a>
+        </li>
+        <li class="reveal">
+          <a class="project-link" href="https://github.com/parkermerritt05/nba_competition_2026" target="_blank" rel="noopener noreferrer">
+            <h2 class="project-title">NBA Expansion Draft Analysis</h2>
+            <p class="project-summary">Syracuse Basketball Analytics Competition room winners—modeled the expansion draft with advantage, expected points, and actual points metrics.</p>
+            <p class="project-stack">Python · Pandas</p>
+          </a>
+        </li>
+        <li class="reveal">
+          <a class="project-link" href="https://github.com/parkermerritt05/nfl_competition_2026" target="_blank" rel="noopener noreferrer">
+            <h2 class="project-title">Defeating Two-High Coverages</h2>
+            <p class="project-summary">Syracuse Sports Analytics Blitz analysis of the best tactics against two-high defenses that have taken over the NFL.</p>
+            <p class="project-stack">Python · Matplotlib · NumPy</p>
+          </a>
+        </li>
+        <li class="reveal">
+          <a class="project-link" href="https://github.com/parkermerritt05/two_minute_drill_analysis" target="_blank" rel="noopener noreferrer">
+            <h2 class="project-title">Two-Minute Drill Analysis</h2>
+            <p class="project-summary">A focused look at the NFL’s two-minute drill and what drives late-game efficiency.</p>
+            <p class="project-stack">R</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-inner">
+      <p class="footer-label">Contact</p>
+      <ul class="footer-links">
+        <li><a href="mailto:parkermerritt05@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/parkermerritt05" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/parkermerritt05" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Parker Merritt</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/reveal.js"></script>
+</body>
+</html>
