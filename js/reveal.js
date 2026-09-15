@@ -20,8 +20,8 @@ function bindScrollReveal() {
   }
 
   const revealObserver = new IntersectionObserver(revealVisibleEntries, {
-    threshold: 0.0,
-    rootMargin: "0px 0px -40px 0px",
+    threshold: 0,
+    rootMargin: "0px",
   });
 
   revealElements.forEach((revealElement) => {
