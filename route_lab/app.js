@@ -166,7 +166,7 @@ function frame(ts) {
   ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
   ctx.clearRect(0, 0, canvas.width / devicePixelRatio, canvas.height / devicePixelRatio);
   // Letterbox background
-  ctx.fillStyle = "#0a3d1c";
+  ctx.fillStyle = "#145a2e";
   ctx.fillRect(0, 0, canvas.width / devicePixelRatio, canvas.height / devicePixelRatio);
   ctx.save();
   ctx.translate(ox, oy);

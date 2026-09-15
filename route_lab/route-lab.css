@@ -1,21 +1,21 @@
 /* Route Lab fills the Arcade stage; canvas letterboxes the 1000×750 field. */
 .games-stage {
-  background: #0a3d1c;
+  background: #145a2e;
 }
 
 #canvas {
   cursor: pointer;
-  background: #0a3d1c;
+  background: #145a2e;
 }
 
 .games-back {
   position: fixed;
-  top: 12px;
-  left: 12px;
+  bottom: 12px;
+  left: 4px;
   z-index: 10;
   padding: 6px 12px;
   border-radius: 6px;
-  font: 600 14px/1 sans-serif;
+  font: 600 12px/1 sans-serif;
   color: #eafff0;
   background: rgba(10, 61, 28, 0.72);
   text-decoration: none;
