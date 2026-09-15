@@ -1,8 +1,22 @@
+const MOBILE_BREAKPOINT = "(max-width: 700px)";
+const REDUCED_MOTION = "(prefers-reduced-motion: reduce)";
+
 function revealVisibleEntries(revealEntries) {
   revealEntries.forEach((revealEntry) => {
     if (revealEntry.isIntersecting) {
       revealEntry.target.classList.add("is-visible");
     }
+  });
+}
+
+function shouldSkipReveal() {
+  return window.matchMedia(REDUCED_MOTION).matches ||
+    window.matchMedia(MOBILE_BREAKPOINT).matches;
+}
+
+function revealAll(revealElements) {
+  revealElements.forEach((revealElement) => {
+    revealElement.classList.add("is-visible");
   });
 }
 
@@ -12,10 +26,8 @@ function bindScrollReveal() {
     return;
   }
 
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    revealElements.forEach((revealElement) => {
-      revealElement.classList.add("is-visible");
-    });
+  if (shouldSkipReveal()) {
+    revealAll(revealElements);
     return;
   }
 
